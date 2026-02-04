@@ -48,3 +48,5 @@ val2= int(input("enter a value:"))#input function
 print("data type:", type(val2), (val2))  #to check data type of variable
 print("DATA TYPE :", type(name), (name))  #to check data type of variable
 print("data type inoutted:", type(val), (val))  #to check data type of variable
+print("data type:",val2)
+")
