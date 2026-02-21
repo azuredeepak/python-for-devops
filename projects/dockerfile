@@ -1,0 +1,17 @@
+# Start with the Python base image
+FROM python:3.11
+
+# Set the working directory (your "pateela")
+WORKDIR /app
+
+# Copy everything from your local folder to the container
+COPY . .
+
+# Fix: Use standard hyphen and no space in the filename
+RUN pip install -r requirements.txt
+
+# The port your app will run on
+EXPOSE 8000
+
+# Gas on: Run your main script
+CMD ["python", "main.py"]
